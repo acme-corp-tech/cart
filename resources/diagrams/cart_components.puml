@@ -2,7 +2,7 @@
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
 System_Boundary(cart_system, "[[https://github.com/acme-corp-tech/architecture/wiki/cart_system.svg Cart]]") {
-    Container(cart, "Cart", "Go", "Change Me", $sprite="go")
+    Container(cart, "Cart", "Go", "Cart Service", $sprite="go")
     ContainerDb(cart_db, "Cart Database", "MySQL", "", $sprite="mysql")
 }
 
