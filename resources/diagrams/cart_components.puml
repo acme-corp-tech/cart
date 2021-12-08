@@ -1,9 +1,9 @@
 @startuml "cart_components"
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
-System_Boundary(cart_system, "[[https://github.com/acme-corp-tech/architecture/wiki/cart_system.svg Cart]]") {
-    Container(cart, "Cart", "Go", "Cart Service", $sprite="go")
-    ContainerDb(cart_db, "Cart Database", "MySQL", "", $sprite="mysql")
+System_Boundary(cart_system, "[[https://github.com/acme-corp-tech/architecture/wiki/cart_system.svg Shopping cart]]") {
+    Container(cart_service, "Cart Service", "Go", "Tracks cart contents", $sprite="go")
+    ContainerDb(cart_storage, "Cart Service Storage", "Redis", "", $sprite="redis")
 }
 
 @enduml

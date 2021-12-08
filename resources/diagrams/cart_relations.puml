@@ -1,6 +1,6 @@
 @startuml "cart_relations"
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
-Rel(cart, cart_db, "Stores something")
+Rel(cart_service, cart_storage, "Stores cart contents")
 
 @enduml
